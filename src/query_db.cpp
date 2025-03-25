@@ -55,7 +55,7 @@ double get_similarity(std::string &ref, std::string &qry, int64_t pre_cnt)
             {
                 qsign = -1;
             }
-            if (qry[qidx] >= '0' && qry[qidx] <= '9')
+            else if (qry[qidx] >= '0' && qry[qidx] <= '9')
             {
                 qnum *= 10;
                 qnum += qry[qidx] - '0';
