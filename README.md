@@ -9,7 +9,10 @@ cd TeaDB/src
 make install PREFIX=/path/to/install
 ```
 
-2. Download the database from release
+2. Download the database
+DB file could be found in following links:
+Google Drive: https://drive.google.com/file/d/1zg_h8crl0f-YbVhXVPunofCxTJjBPYCa/view?usp=drive_link
+
 
 ## Usage
 1. Command
