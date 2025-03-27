@@ -61,7 +61,7 @@ options:
 
 3. example
 ```bash
-/path/to/install/create_db.py -l info.list -i jac_dir -o TEA.db
+/path/to/install/script/create_db.py -l info.list -i jac_dir -o TEA.db
 ```
 
 4. the info.list file should contain 7 columns, which should be:
