@@ -64,7 +64,7 @@ options:
 /path/to/install/script/create_db.py -l info.list -i jac_dir -o TEA.db
 ```
 
-4. the info.list file should contain 7 columns, which should be:
+4. the info.list file should contain 7 columns which seperated by <kbd>tab</kbd>, the details of coulmns are:
 
 |ID|Chinese name|English name|Species|Group|Country|Area|
 |---|---|---|---|---|---|---|
