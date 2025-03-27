@@ -43,3 +43,30 @@ DB file could be found in following links:
 |K109A|苦味白牡丹1号|kuweibaimudan1hao|C.sinensis.var.sinensis|CSS.G1|China|Fujian|0.279485|
 |GZD8A|輋门|fengmen|C.sinensis.var.sinensis|CSS.G1|China|Guangdong|0.275496|
 |K18A|黄叶水仙|huangyeshuixian|C.sinensis.var.sinensis|CSS.G1|China|Fujian|0.271065|
+
+## Optional:
+### Create Own Database
+1. generate jac files with [mike](https://github.com/Argonum-Clever2/mike)
+
+2. run create_db.py
+```bash
+usage: create_db.py [-h] -l LIST -i INPUT -o OUTPUT
+
+options:
+  -h, --help           show this help message and exit
+  -l, --list LIST      Input infomation list
+  -i, --input INPUT    Input jac directory
+  -o, --output OUTPUT  Output db file
+```
+
+3. example
+```bash
+/path/to/install/create_db.py -l info.list -i jac_dir -o TEA.db
+```
+
+4. the info.list file should contain 7 columns, which should be:
+
+|ID|Chinese name|English name|Species|Group|Country|Area|
+|---|---|---|---|---|---|---|
+
+> **Notice:** ID should be unique for all samples.

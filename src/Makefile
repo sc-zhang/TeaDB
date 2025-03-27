@@ -6,4 +6,7 @@ all:
 
 install: all
 	@if [ ! -d $(PREFIX)/bin ]; then mkdir -p $(PREFIX)/bin; fi
+	@if [ ! -d $(PREFIX)/script ]; then mkdir -p $(PREFIX)/script; fi
 	cp query_db $(PREFIX)/bin
+	cp script/create_db.py $(PREFIX)/script
+	chmod +x $(PREFIX)/script/create_db.py
