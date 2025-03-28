@@ -16,7 +16,8 @@ def create_db(jac_dir, info_list, out_db):
     print("Preparing")
     db = out_db
     if os.path.exists(db):
-        os.remove(db)
+        print("Error: database file exists, please set another name")
+        exit(-1)
 
     conn = sqlite3.connect(db)
     cur = conn.cursor()
