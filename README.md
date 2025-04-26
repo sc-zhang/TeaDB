@@ -1,7 +1,40 @@
 ## Introduction
 TeaDB is a minhash fingerprint database of tea plants which contain fingerprints of 735 samples.
 
-## Installation
+## GUI version
+
+### Installation
+1. Install prebuild GUI program
+Download file in release
+
+2. Download the database file
+DB file could be found in following links:  
+- Google Drive: https://drive.google.com/file/d/1zg_h8crl0f-YbVhXVPunofCxTJjBPYCa/view?usp=drive_link
+- Baidu Netdisk: https://pan.baidu.com/s/1nEWYqXQLYvSaEojf-BQNyg?pwd=94km
+
+### Usage
+1. Extract files, create db folder if not exists.
+![](images/step1.png)
+
+2. move database file "Tea.db" into db folder.
+![](images/step2.png)
+
+3. double click "TeaDB.exe"
+![](images/step3.png)
+
+4. click <kbd>Select</kbd> button, select "jac" file created by [mike](https://github.com/Argonum-Clever2/mike).
+![](images/step4.png)
+
+5. click <kbd>Query</kbd> button, then wait the program processing.
+![](images/step5.png)
+
+### Result
+1. the top 10 records with highest Jaccard similarity with query jac would be shown.
+![](images/step6.png)
+
+
+## CLI version
+### Installation
 1. Install the query program
 ```bash
 git clone https://github.com/sc-zhang/TeaDB.git
@@ -14,7 +47,8 @@ DB file could be found in following links:
 - Google Drive: https://drive.google.com/file/d/1zg_h8crl0f-YbVhXVPunofCxTJjBPYCa/view?usp=drive_link
 - Baidu Netdisk: https://pan.baidu.com/s/1nEWYqXQLYvSaEojf-BQNyg?pwd=94km
 
-## Usage
+### Usage
+
 1. Command
 ```bash
 /path/to/install/bin/query_db <db_file> <query_file> [pre_cnt]
@@ -28,7 +62,7 @@ DB file could be found in following links:
 /path/to/install/bin/query_db TEA.db query.jac
 ```
 
-## Result
+### Result
 1. the top 10 records with highest Jaccard similarity with query jac would be print. The result is like below
 
 |ID|Chinese name|English name|Species|Group|Country|Area|Similarity|
