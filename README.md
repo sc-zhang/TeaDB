@@ -13,23 +13,23 @@ DB file could be found in following links:
 - Baidu Netdisk: https://pan.baidu.com/s/1nEWYqXQLYvSaEojf-BQNyg?pwd=94km
 
 ### Usage
-1. Extract files, create db folder if not exists.
+1. Extract files, create db folder if not exists.  
 ![](images/step1.png)
 
-2. move database file "Tea.db" into db folder.
+2. move database file "Tea.db" into db folder.  
 ![](images/step2.png)
 
-3. double click "TeaDB.exe"
+3. double click "TeaDB.exe".  
 ![](images/step3.png)
 
-4. click <kbd>Select</kbd> button, select "jac" file created by [mike](https://github.com/Argonum-Clever2/mike).
+4. click <kbd>Select</kbd> button, select "jac" file created by [mike](https://github.com/Argonum-Clever2/mike).  
 ![](images/step4.png)
 
-5. click <kbd>Query</kbd> button, then wait the program processing.
+5. click <kbd>Query</kbd> button, then wait the program processing.  
 ![](images/step5.png)
 
 ### Result
-1. the top 10 records with highest Jaccard similarity with query jac would be shown.
+1. the top 10 records with highest Jaccard similarity with query jac would be shown.  
 ![](images/step6.png)
 
 
