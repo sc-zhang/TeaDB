@@ -4,10 +4,11 @@ TeaDB is a minhash fingerprint database of tea plants which contain fingerprints
 ## GUI version
 
 ### Installation
-1. Install prebuild GUI program
+1. Install prebuild GUI program  
 Download file in release
+https://github.com/sc-zhang/TeaDB/releases/download/v1.0.0/TeaDB_v1.0.0.zip
 
-2. Download the database file
+2. Download the database file  
 DB file could be found in following links:  
 - Google Drive: https://drive.google.com/file/d/1zg_h8crl0f-YbVhXVPunofCxTJjBPYCa/view?usp=drive_link
 - Baidu Netdisk: https://pan.baidu.com/s/1nEWYqXQLYvSaEojf-BQNyg?pwd=94km
