@@ -56,12 +56,14 @@ def create_db(jac_dir, info_list, out_db):
         cur.execute(sql)
 
     print("Inserting data by groups")
+    ins_cnt = 0
     for fn in os.listdir(jac_dir):
         if fn.endswith(".jac"):
             smp = fn.split(".")[0]
             print("\tReading %s" % smp)
             if smp not in group_db:
                 continue
+            ins_cnt += 1
             group = group_db[smp].replace(".", "_")
             full_fn = os.path.join(jac_dir, fn)
             suff_list = [-1 for _ in range(4**10)]
@@ -82,6 +84,7 @@ def create_db(jac_dir, info_list, out_db):
             )
             cur.execute(sql)
 
+    print("%d samples added" % ins_cnt)
     print("Saving database")
     conn.commit()
     conn.close()
