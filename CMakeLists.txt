@@ -27,6 +27,8 @@ if(WIN32)
         endif()
 elseif(APPLE)
         set(QT_PATH "/Users/zhangshengcheng/Qt/6.6.0/macos")
+else()
+        set(QT_PATH "/home/zsc/Qt/6.10.0/gcc_64")
 endif()
 
 set(CMAKE_PREFIX_PATH ${QT_PATH})
@@ -47,10 +49,17 @@ add_executable(TeaDB src/main.cpp
         src/qwaiting.h
         src/qwaiting.ui
         resources/logo.rc)
-target_link_libraries(TeaDB
-        SQLite3
-        Qt::Widgets
-)
+if(LINUX)
+  target_link_libraries(TeaDB
+          sqlite3
+          Qt::Widgets
+  )
+else()
+  target_link_libraries(TeaDB
+          SQLite3
+          Qt::Widgets
+  )
+endif()
 
 if(WIN32)
         target_include_directories(TeaDB PRIVATE ${SQLite3_INCLUDE_DIRS})
